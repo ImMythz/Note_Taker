@@ -1,12 +1,8 @@
 const express = require('express');
 const htmlRoutes = require('./routes/htmlRoutes');
 const apiRoutes = require('./routes/apiRoutes');
-// const compression = require('compression');
 
 const app = express();
-
-// compresses all routes
-// app.use(compression());
 
 // allows access to files inside the 'public' folder
 app.use(express.static('public'));
